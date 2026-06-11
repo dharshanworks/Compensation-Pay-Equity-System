@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Compensation Rules - CompensationPro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="loadCompensationRules()">
+
+    <div class="navbar">
+        <h2>Compensation<span>Pro</span></h2>
+
+        <div>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="employees.html">Employees</a>
+            <a href="compensation-rules.html">Rules</a>
+            <a href="calculator.html">Calculator</a>
+            <a href="reports.html">Reports</a>
+            <button onclick="logout()" class="logout-btn">Logout</button>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <section class="page-header reveal">
+            <span class="hero-tag">Client Configuration</span>
+            <h1>Compensation Rules</h1>
+            <p class="page-desc">
+                Configure performance-based hike rules. These rules are used by the salary calculator
+                to calculate merit increase and new salary.
+            </p>
+        </section>
+
+        <div class="form-box reveal">
+            <h2>Add Compensation Rule</h2>
+
+            <div class="form-grid">
+                <select id="rule_rating">
+                    <option value="">Select Performance Rating</option>
+                    <option value="5">5 - Excellent</option>
+                    <option value="4">4 - Very Good</option>
+                    <option value="3">3 - Good</option>
+                    <option value="2">2 - Average</option>
+                    <option value="1">1 - Needs Improvement</option>
+                </select>
+
+                <input type="number" id="hike_percentage" placeholder="Hike Percentage">
+            </div>
+
+            <button onclick="addCompensationRule()">Add Rule</button>
+
+            <p id="ruleMessage"></p>
+        </div>
+
+        <div class="table-section reveal">
+            <h2>Configured Rules</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Rule ID</th>
+                        <th>Performance Rating</th>
+                        <th>Rating Label</th>
+                        <th>Hike Percentage</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+
+                <tbody id="rulesTable">
+                    <tr>
+                        <td colspan="5">Loading rules...</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <section class="info-section reveal">
+            <h2>Why This Module Is Important</h2>
+            <p>
+                This module represents a low-code style configuration feature. HR admins can change
+                hike percentages from the UI instead of changing application code. This is useful for
+                client-specific compensation setup.
+            </p>
+        </section>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

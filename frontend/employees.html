@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Employees - CompensationPro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="loadEmployees()">
+
+    <div class="navbar">
+        <h2>Compensation<span>Pro</span></h2>
+
+        <div>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="employees.html">Employees</a>
+            <a href="compensation-rules.html">Rules</a>
+            <a href="calculator.html">Calculator</a>
+            <a href="reports.html">Reports</a>
+            <button onclick="logout()" class="logout-btn">Logout</button>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <section class="page-header reveal">
+            <span class="hero-tag">Employee Master Data</span>
+            <h1>Employee Management</h1>
+            <p class="page-desc">
+                Add and manage employee compensation details, department information,
+                performance ratings and salary data.
+            </p>
+        </section>
+
+        <div class="form-box reveal">
+            <h2>Add Employee</h2>
+
+            <div class="form-grid">
+                <input type="text" id="employee_name" placeholder="Employee Name">
+                <input type="email" id="email" placeholder="Email">
+
+                <select id="department_id">
+                    <option value="">Select Department</option>
+                    <option value="1">Engineering</option>
+                    <option value="2">HR</option>
+                    <option value="3">Sales</option>
+                    <option value="4">Finance</option>
+                </select>
+
+                <input type="text" id="designation" placeholder="Designation">
+                <input type="text" id="location" placeholder="Location">
+
+                <select id="gender">
+                    <option value="">Select Gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+
+                <input type="number" id="experience" placeholder="Experience">
+                <input type="number" id="current_salary" placeholder="Current Salary">
+
+                <select id="performance_rating">
+                    <option value="">Select Performance Rating</option>
+                    <option value="5">5 - Excellent</option>
+                    <option value="4">4 - Very Good</option>
+                    <option value="3">3 - Good</option>
+                    <option value="2">2 - Average</option>
+                    <option value="1">1 - Needs Improvement</option>
+                </select>
+
+                <input type="text" id="manager_name" placeholder="Manager Name">
+            </div>
+
+            <button onclick="addEmployee()">Add Employee</button>
+            <p id="employeeMessage"></p>
+        </div>
+
+        <div class="table-section reveal">
+            <h2>Employee List</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Department</th>
+                        <th>Designation</th>
+                        <th>Location</th>
+                        <th>Gender</th>
+                        <th>Salary</th>
+                        <th>Rating</th>
+                        <th>Manager</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+
+                <tbody id="employeeTable">
+                    <tr>
+                        <td colspan="10">Loading employees...</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

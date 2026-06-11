@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CompensationPro - HR SaaS Platform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Landing Navbar -->
+    <nav class="landing-navbar">
+        <h2>Compensation<span>Pro</span></h2>
+
+        <div>
+            <a href="#features">Features</a>
+            <a href="#workflow">Workflow</a>
+            <a href="#reports">Reports</a>
+            <button onclick="window.location.href='login.html'">Login</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="landing-hero">
+        <div class="hero-content">
+            <span class="landing-badge">HR SaaS • Compensation • Pay Equity • SQL Reports</span>
+
+            <h1>Smart Compensation Planning & Pay Equity Reporting Platform</h1>
+
+            <p>
+                CompensationPro is a business-focused HR SaaS application that helps
+                HR teams manage employee salary data, configure compensation rules,
+                calculate merit increases, analyze pay equity, and generate SQL-based reports.
+            </p>
+
+            <div class="landing-actions">
+                <button onclick="window.location.href='login.html'">Get Started</button>
+                <button class="outline-btn" onclick="document.getElementById('features').scrollIntoView({behavior:'smooth'})">
+                    Explore Features
+                </button>
+            </div>
+        </div>
+
+        <div class="hero-dashboard-card">
+            <div class="dashboard-preview-header">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <h3>HR Analytics Preview</h3>
+
+            <div class="preview-stat">
+                <p>Total Employees</p>
+                <strong>124</strong>
+            </div>
+
+            <div class="preview-stat">
+                <p>Average Salary</p>
+                <strong>₹6.4L</strong>
+            </div>
+
+            <div class="preview-stat">
+                <p>Pay Equity Score</p>
+                <strong>87%</strong>
+            </div>
+
+            <div class="mini-chart">
+                <div style="height: 45%;"></div>
+                <div style="height: 70%;"></div>
+                <div style="height: 55%;"></div>
+                <div style="height: 85%;"></div>
+                <div style="height: 65%;"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feature Section -->
+    <section class="landing-section" id="features">
+        <div class="section-title">
+            <span class="landing-badge">Core Modules</span>
+            <h2>Everything Needed for HR Compensation Planning</h2>
+            <p>
+                The platform is designed around real HR SaaS workflows such as employee data management,
+                configurable rules, salary calculations, reporting, and QA validation.
+            </p>
+        </div>
+
+        <div class="landing-grid">
+            <div class="landing-card">
+                <div class="landing-icon">👥</div>
+                <h3>Employee Management</h3>
+                <p>
+                    Add, view, and manage employee salary, department, designation,
+                    experience, and performance data.
+                </p>
+            </div>
+
+            <div class="landing-card">
+                <div class="landing-icon">⚙️</div>
+                <h3>Configurable Rules</h3>
+                <p>
+                    Configure performance-based hike rules without changing backend logic,
+                    similar to a low-code business setup.
+                </p>
+            </div>
+
+            <div class="landing-card">
+                <div class="landing-icon">💰</div>
+                <h3>Salary Calculator</h3>
+                <p>
+                    Automatically calculate hike amount and new salary based on performance rating.
+                </p>
+            </div>
+
+            <div class="landing-card">
+                <div class="landing-icon">⚖️</div>
+                <h3>Pay Equity Analysis</h3>
+                <p>
+                    Analyze salary gaps using gender-wise, department-wise, and salary-band-based reports.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Workflow Section -->
+    <section class="landing-section workflow-section" id="workflow">
+        <div class="section-title">
+            <span class="landing-badge">Workflow</span>
+            <h2>Simple HR Implementation Flow</h2>
+        </div>
+
+        <div class="workflow-container">
+            <div class="workflow-step">
+                <span>01</span>
+                <h3>Add Employee Data</h3>
+                <p>HR admin enters employee, salary, department, and performance details.</p>
+            </div>
+
+            <div class="workflow-line"></div>
+
+            <div class="workflow-step">
+                <span>02</span>
+                <h3>Apply Compensation Rules</h3>
+                <p>System applies rating-based hike rules to calculate compensation changes.</p>
+            </div>
+
+            <div class="workflow-line"></div>
+
+            <div class="workflow-step">
+                <span>03</span>
+                <h3>Generate Reports</h3>
+                <p>SQL-based reports show salary insights, pay equity, and salary band analysis.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reports Section -->
+    <section class="landing-section" id="reports">
+        <div class="section-title">
+            <span class="landing-badge">SQL Reporting</span>
+            <h2>Reports Covered in This Project</h2>
+        </div>
+
+        <div class="report-showcase">
+            <div>
+                <h3>Department-wise Salary Report</h3>
+                <p>Uses SQL JOIN, GROUP BY and AVG functions to calculate average salary by department.</p>
+            </div>
+
+            <div>
+                <h3>Pay Equity Report</h3>
+                <p>Shows gender-wise average salary and employee count for compensation comparison.</p>
+            </div>
+
+            <div>
+                <h3>Below Salary Band Report</h3>
+                <p>Identifies employees whose salary is below the configured salary band.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <h2>Ready to Explore the Dashboard?</h2>
+        <p>
+            Login as admin and test employee management, compensation calculator,
+            and SQL reporting features.
+        </p>
+
+        <button onclick="window.location.href='login.html'">Go to Login</button>
+    </section>
+
+    <footer class="landing-footer">
+        <p>CompensationPro | HR SaaS Compensation Planning Project</p>
+    </footer>
+
+</body>
+</html>

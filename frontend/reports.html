@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Reports - CompensationPro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="navbar">
+        <h2>Compensation<span>Pro</span></h2>
+
+        <div>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="employees.html">Employees</a>
+            <a href="compensation-rules.html">Rules</a>
+            <a href="calculator.html">Calculator</a>
+            <a href="reports.html">Reports</a>
+            <button onclick="logout()" class="logout-btn">Logout</button>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <section class="page-header reveal">
+            <span class="hero-tag">SQL Reporting Dashboard</span>
+            <h1>Compensation & Pay Equity Reports</h1>
+            <p class="page-desc">
+                Generate HR reports using SQL queries from employee, department,
+                salary band and compensation result data.
+            </p>
+        </section>
+
+        <div class="report-buttons reveal">
+            <button onclick="loadDepartmentSalaryReport()">Department Salary Report</button>
+            <button onclick="loadPayEquityReport()">Pay Equity Report</button>
+            <button onclick="loadBelowBandReport()">Below Salary Band Report</button>
+        </div>
+
+        <div id="reportArea" class="table-section reveal">
+            <h2>Select a report to view data</h2>
+            <p class="page-desc">
+                Reports will be generated from backend SQL queries and displayed here.
+            </p>
+        </div>
+
+        <section class="info-section reveal">
+            <h2>Report Types Covered</h2>
+            <p>
+                This module demonstrates SQL reporting skills such as JOIN, GROUP BY,
+                aggregate functions, filtering, salary comparison, and business report generation.
+            </p>
+        </section>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

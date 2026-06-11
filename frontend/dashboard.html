@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard - CompensationPro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="loadDashboard()">
+
+    <div class="navbar">
+        <h2>Compensation<span>Pro</span></h2>
+
+        <div>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="employees.html">Employees</a>
+            <a href="compensation-rules.html">Rules</a>
+            <a href="calculator.html">Calculator</a>
+            <a href="reports.html">Reports</a>
+            <button onclick="logout()" class="logout-btn">Logout</button>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <section class="hero-section reveal">
+            <span class="hero-tag">HR SaaS • Low-Code Inspired • SQL Reports</span>
+
+            <h1>Compensation Planning & Pay Equity Reporting System</h1>
+
+            <p>
+                A business-focused HR platform that helps admins manage employees,
+                configure compensation rules, calculate merit increases, analyze pay gaps,
+                and generate SQL-based reports for client-specific requirements.
+            </p>
+
+            <div class="hero-actions">
+                <button onclick="window.location.href='employees.html'">Manage Employees</button>
+                <button class="secondary-btn" onclick="window.location.href='reports.html'">View Reports</button>
+            </div>
+        </section>
+
+        <div class="card-container reveal">
+            <div class="card">
+                <div class="card-icon">👥</div>
+                <h3>Total Employees</h3>
+                <p id="totalEmployees">0</p>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">🏢</div>
+                <h3>Total Departments</h3>
+                <p id="totalDepartments">0</p>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">💰</div>
+                <h3>Average Salary</h3>
+                <p id="averageSalary">₹0</p>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">📊</div>
+                <h3>System Focus</h3>
+                <p>Pay Equity</p>
+            </div>
+        </div>
+
+        <section class="product-section reveal">
+            <h2>HR Product Areas Covered</h2>
+
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-icon">💼</div>
+                    <h3>Compensation</h3>
+                    <p>
+                        Calculate salary hikes, bonus planning and compensation changes
+                        using configurable business rules.
+                    </p>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-icon">📈</div>
+                    <h3>Performance</h3>
+                    <p>
+                        Use performance ratings to drive compensation decisions and
+                        employee growth planning.
+                    </p>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-icon">🧠</div>
+                    <h3>Planning & Modeling</h3>
+                    <p>
+                        Analyze salary budgets, department costs and business outcomes
+                        using structured reports.
+                    </p>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-icon">⚖️</div>
+                    <h3>Pay Equity</h3>
+                    <p>
+                        Compare salary patterns and identify employees below salary
+                        bands using SQL-based reports.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="info-section reveal">
+            <h2>Why This Project Fits HR SaaS Implementation Roles</h2>
+            <p>
+                This project demonstrates HR SaaS implementation, client-specific configuration,
+                SQL reporting, QA testing, defect verification, and business process understanding.
+                It is designed to reflect real-world compensation planning and reporting workflows.
+            </p>
+        </section>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

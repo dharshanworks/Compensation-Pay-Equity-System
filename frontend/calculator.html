@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator - CompensationPro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="loadEmployeesForCalculator()">
+
+    <div class="navbar">
+        <h2>Compensation<span>Pro</span></h2>
+
+        <div>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="employees.html">Employees</a>
+            <a href="compensation-rules.html">Rules</a>
+            <a href="calculator.html">Calculator</a>
+            <a href="reports.html">Reports</a>
+            <button onclick="logout()" class="logout-btn">Logout</button>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <section class="page-header reveal">
+            <span class="hero-tag">Merit Increase Calculator</span>
+            <h1>Compensation Calculator</h1>
+            <p class="page-desc">
+                Calculate new salary based on employee performance rating and configured hike rules.
+            </p>
+        </section>
+
+        <div class="form-box reveal">
+            <h2>Calculate Compensation</h2>
+
+            <select id="calculatorEmployee">
+                <option value="">Select Employee</option>
+            </select>
+
+            <button onclick="calculateCompensation()">Calculate Salary Hike</button>
+
+            <div id="calculationResult" class="result-box"></div>
+        </div>
+
+        <div class="info-section reveal">
+            <h2>Configured Compensation Rules</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Performance Rating</th>
+                        <th>Rating Label</th>
+                        <th>Hike Percentage</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>5</td>
+                        <td>Excellent</td>
+                        <td>20%</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Very Good</td>
+                        <td>15%</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Good</td>
+                        <td>10%</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Average</td>
+                        <td>5%</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Needs Improvement</td>
+                        <td>0%</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
