@@ -573,19 +573,7 @@ This project demonstrates:
 
 ---
 
-## Interview Explanation
 
-```text
-I built a Compensation Planning and Pay Equity Reporting System inspired by HR SaaS workflows.
-
-The system allows HR admins to manage employees, configure compensation rules, calculate salary hikes based on performance ratings, compare salaries with salary bands, and generate SQL-based reports.
-
-I used HTML, CSS, JavaScript, Node.js, Express.js, and MySQL. I also prepared the project structure for manual testing, API testing, database testing, and Selenium automation testing.
-
-This project helped me understand software development, QA workflows, SQL reporting, and client-specific configuration in business applications.
-```
-
----
 
 ## Author
 
