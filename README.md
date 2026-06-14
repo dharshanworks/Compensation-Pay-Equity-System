@@ -562,16 +562,7 @@ This project demonstrates:
 
 ---
 
-## Resume Points
 
-* Built an HR SaaS-inspired Compensation Planning and Pay Equity Reporting System using HTML, CSS, JavaScript, Node.js, Express.js, and MySQL.
-* Designed MySQL database schema for employees, departments, salary bands, compensation rules, and compensation results.
-* Implemented configurable performance-based salary hike rules and merit increase calculator.
-* Created SQL reports using JOIN, GROUP BY, AVG, COUNT, and filtering conditions.
-* Developed pay equity reports and below salary band analysis for HR decision-making.
-* Prepared the project for manual testing, API testing using Postman, and Selenium automation testing.
-
----
 
 
 
