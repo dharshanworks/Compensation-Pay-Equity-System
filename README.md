@@ -16,7 +16,6 @@ The objective of this project is to build a business-focused HR platform where a
 * Analyze pay equity using reports
 * Identify employees below salary bands
 * Generate SQL-based business reports
-* Prepare the application for manual and automation testing
 
 ---
 
